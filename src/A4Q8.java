@@ -84,15 +84,13 @@ public class A4Q8 extends javax.swing.JFrame {
 
     private void nameInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameInputActionPerformed
         // TODO add your handling code here:
-
-        
-
     }//GEN-LAST:event_nameInputActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        //getting their name and saying hello
         String name = nameInput.getText();
         textOutput.setText("Hello " + name);
-        
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

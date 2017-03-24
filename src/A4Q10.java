@@ -115,19 +115,28 @@ public class A4Q10 extends javax.swing.JFrame {
     }//GEN-LAST:event_celActionPerformed
 
     private void confActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confActionPerformed
+        //getting the text in the celsius box
         String initialc = cel.getText();
+        //converting to a double
         double secondc = Double.parseDouble(initialc);
-        double thirdc = secondc*1.8;
-        double finalf = thirdc+32;
-        output.setText("that is "+finalf+" degrees fahrenheit" );
+        //math
+        double thirdc = secondc * 1.8;
+        double finalf = thirdc + 32;
+        //outputting number
+        output.setText("that is " + finalf + " degrees fahrenheit");
     }//GEN-LAST:event_confActionPerformed
 
     private void concActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_concActionPerformed
+        //getting text in fahrenheit box 
         String initialf = fer.getText();
+        //converting string to double
         double secondf = Double.parseDouble(initialf);
-        double thirdf = secondf+32;
-        double finalc = thirdf/1.8;
-        output.setText("that is "+finalc+" degrees celsius" );
+        //math
+        double thirdf = secondf - 32;
+        double finalc = thirdf / 1.8;
+        //outputting number
+        output.setText("that is " + finalc + " degrees celsius");
+
     }//GEN-LAST:event_concActionPerformed
 
     /**

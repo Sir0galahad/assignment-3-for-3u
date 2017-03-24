@@ -25,14 +25,16 @@ public class A4Q7 {
         //starting the loop
         while (player < 100) {
             System.out.println("please enter what you rolled it should be between 2-12");
-            //0]
-            
+
             int roll = in.nextInt();
+            //allowing them to quit
             if (roll == 0) {
                 System.out.println("aww okay please play again some other time");
                 break;
             }
+            //actually advancin the player
             player = player + roll;
+            //setting up the snakes and ladders
             if (player == 54) {
                 player = 19;
                 System.out.println("Oh no you hit a snake and fall all the way back to place 19");
@@ -57,9 +59,11 @@ public class A4Q7 {
                 player = 86;
                 System.out.println("Yay you hit a ladder and got put up to 86");
             }
+            //letting the player know their location
             System.out.println("you are currently on space " + player);
         }
-        if(player>99){
+        //win condition
+        if (player > 99) {
             System.out.println("Congrats you won yaaaay!");
         }
     }

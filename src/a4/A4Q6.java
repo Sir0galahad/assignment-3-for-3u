@@ -25,7 +25,7 @@ public class A4Q6 {
 
         //determining how far over if at all they are
         int over = speed - limit;
-        
+
         //giving them info based on how over the speed limit they are
         if (over < 1) {
             System.out.println("congrats you are fine");
